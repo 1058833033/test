@@ -1,5 +1,7 @@
-FROM openjdk:8
-WORKDIR /usr/local
-COPY ./target/test.jar ./
-EXPOSE 8080
-CMD ["java","-jar","test.jar"]
+FROM openjdk:8-jre
+ENV ARTIFACTID test
+ENV ARTIFACTVERSION 1.0-SNAPSHOT
+ENV HOME_PATH /home
+WORKDIR $HOME_PATH
+ADD /$ARTIFACTID-$ARTIFACTVERSION.jar $HOME_PATH/$ARTIFACTID.jar
+ENTRYPOINT ["java", "-jar", "test.jar"]
