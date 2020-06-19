@@ -46,7 +46,7 @@
                     </imageTags>
                     <registryUrl>192.168.159.133</registryUrl>
                     <pushImage>true</pushImage>
-                    <imageName>192.168.159.133/demo/${project.artifactId}:${project.version}</imageName>
+                    <imageName>192.168.159.133/test/${project.artifactId}:${project.version}</imageName>
                     <!--构建镜像的配置信息-->
                     <resources>
                         <resource>
