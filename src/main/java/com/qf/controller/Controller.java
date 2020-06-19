@@ -13,6 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
     @RequestMapping("/hello/{name}")
     public String hello(@PathVariable("name") String name){
-        return "hello" + name;
+        return "hello方明星-" + name;
     }
 }
