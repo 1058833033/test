@@ -1,0 +1,8 @@
+version: '3.1'
+services:
+  test:
+    restart: always
+    image: 192.168.159.133/test/test:1.0-SNAPSHOT
+    container_name: test
+    ports:
+      - 8080:8080
